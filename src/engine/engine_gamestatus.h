@@ -122,6 +122,7 @@ typedef struct gamestatus_s{
     struct{
         int mainfont;
         int mainfontstyle;
+        int mainfontselected;
         int titlefont;
         int titlefontstyle;
 

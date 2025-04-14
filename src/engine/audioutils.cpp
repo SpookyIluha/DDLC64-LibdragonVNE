@@ -91,7 +91,7 @@ void sound_stop(){
     if(gamestatus.state.audio.sound_playing){
         rspq_wait();
         mixer_ch_stop(AUDIO_CHANNEL_SOUND);
-        wav64_close(&sound);
+        if(sound.st) wav64_close(&sound);
     }
     gamestatus.state.audio.sound_playing = false;
     gamestatus.state.audio.sound_name[0] = 0;

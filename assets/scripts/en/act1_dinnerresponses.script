@@ -1,0 +1,13 @@
+[Main_Brew]
+    hide j
+    show b 1a
+    mc "You know, this is pretty funny!"
+    b 2a "I knew you would like it!"
+    script act1 [Main_Choice]
+
+[Main_Jam]
+    hide b
+    show j 1a
+    mc "You know, this is quite tasty!"
+    j 2a "I knew you cared!"
+    script act1 [Main_Choice]

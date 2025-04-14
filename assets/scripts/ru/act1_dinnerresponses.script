@@ -1,0 +1,14 @@
+[Main_Brew]
+    hide j
+    show b 1a
+    mc "Знаешь, это довольно забавно!"
+    b 2a "Я знал что тебе понравится!"
+    script act1 [Main_Choice]
+
+[Main_Jam]
+    hide b
+    show j 1a
+    mc "Знаешь, это довольно вкусно!"
+    j 2a "Я знал что тебе не безразлично!"
+    script act1 [Main_Choice]
+

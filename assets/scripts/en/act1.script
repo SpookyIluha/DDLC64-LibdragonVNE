@@ -1,0 +1,94 @@
+[Main]
+
+    scene bg jungle
+
+    play music bgm_drum
+
+    autosave 0
+
+    "..."
+    "Now I am in the green \"jungle\"."
+    "And everything would be fine..."
+    "But suddenly I see that the same mug of beer is rushing towards me again?"
+
+    show b 1a
+
+    b 2a "So, now that we've escaped the grayness of our surroundings, we are free people and can choose!"
+    b 1a "Choose what you like more?"
+    hide b
+    choice "Choose what you like more?" "Bagel" [choice1_a] "Cheese" [choice1_b]
+
+[choice1_a]
+    variable mc 2 set 0
+    show b 1a
+    b 2a "Ah, Bagels, that's wonderful."
+    b 1a "Jam also loves bagels..."
+    label [Main_P2]
+
+[choice1_b]
+    variable mc 2 set 1
+    show b 1a
+    b 2a "Ah, Cheese, that's wonderful."
+    b 1a "I do love cheese..."
+    label [Main_P2]
+    
+[Main_P2]
+
+    stop music
+
+    show j 2a
+    j 3a "..."
+    j "..."
+    b "..."
+    "Jam looks back at Brew."
+    "Brew looks back at Jam."
+    "I look back at both... of the items..."
+
+    b 1a "But we can do it differently."
+
+    play music bgm_drum
+    b 1a "How about you have lunch with both of us in turn, and then you tell us which lunch you liked more."
+    b 2a "Don't forget that we, the characters, and you have memory! Both we and you can remember various things (in numbers) and recall them in your actions!"
+    b "We can compare each other's memories, and also check just with specific values, and the story can change because of that!"
+    b 1a "Let's check the memory right now!"
+
+label [Main_Choice]
+
+[Main_AlreadyDone]
+    "I have already had lunch with him."
+    label [Main_Choice]
+
+[Main_Choice]
+    "..."
+    if mc 1 == value 2 then [Main_P3]
+    hide j
+    hide b
+    choice "Who should I have lunch with?" "Brew" [Main_Brew] "Jam" [Main_Jam]
+    "..."
+
+[Main_Brew]
+    if b 0 == value 1 then [Main_AlreadyDone]
+    show b 1a
+    mc "I want to have lunch with cheese and a mug of beer!"
+    "Jam will definitely appreciate this."
+    variable b 0 set 1
+    variable mc 1 incr 1
+    script act1_dinnerresponses [Main_Brew]
+
+[Main_Jam]
+    if j 0 == value 1 then [Main_AlreadyDone]
+    show j 1a
+    mc "I want to have lunch with a bagel and jam."
+    "Brew will evaluate this impartially."
+    variable j 0 set 1
+    variable mc 1 incr 1
+    script act1_dinnerresponses [Main_Jam]
+
+[Main_P3]
+    show b 1a
+    show j 2a
+    b 1a "By the way, did you know that we have already auto-saved?"
+    b 1a "If you want to review this scene again, load the auto-save!"
+    b 3a "You can also save at any moment and revisit scenes..."
+
+    script act2 [Main]

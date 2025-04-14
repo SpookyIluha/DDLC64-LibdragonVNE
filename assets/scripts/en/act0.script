@@ -1,0 +1,76 @@
+[Main]
+
+    stop music
+
+    scene bg gray_day
+
+    "..."
+    "I found myself in gray everyday life."
+    "Having found myself in gray everyday life, I felt calm, as there is nothing complicated here."
+    "And everything would be fine..."
+    "But suddenly I see something rushing towards me at full speed... A mug of beer?"
+
+    play music bgm_drum
+
+    show b 1a
+
+    b "Hello, buddy!"
+    b 2a "If you came to learn how to create your own visual novels, you're in the right place!"
+    b 1a "This mini-tutorial will show you the basic capabilities of the engine."
+    b 2a "I recommend opening the script file assets/scripts/en/act0.script right now and looking at it alongside our conversation!"
+    b 1a "The syntax there is similar to RenPy, which will help with porting and creating various games, but it is not identical!"
+    b 3a "But first..."
+    b 4a "What is your name?"
+
+    set_player_name "What is your name? Press D-Pad to choose letters."
+
+    b 3a "Ah, %s, nice to meet you!"
+
+    b 2a "My name is Brew. I'm a beer mug!"
+    b 1a "I'm kind of a mascot for the N64brew community!"
+    mc "Nice to meet you... Brew..."
+    "I am talking to a mug of beer... Wonderful..."
+
+    autosave 0
+
+    b 1a "Hey, Jam, come here, look who I met! This is %s!"
+    show j 1a
+    j 1a "%s??? The one and only???"
+    "Now even a jar of jam is talking..."
+    j 4a "I can't believe it... But I haven't seen you before! Or have I..."
+    j 1a "I'm Jam! There was recently a game jam for N64brew GameJam #5 and I was invited to the game jam!"
+    j 2a "You should have seen it! There were so many amazing games!"
+    j 1a "Maybe you even participated there! In any case..."
+    b 2a "Actually..."
+    b 1a "As you may have noticed, we are currently in the testing area, and above you can see where exactly we are in the script."
+    b "We can go for a walk; I will run to get the map."
+
+    hide b
+    stop music
+
+    "..."
+    j "..."
+    "Jam looks back at Brew."
+    j 2a "And where did he even find a map in this place?"
+    "Brew comes back."
+
+    show b 1a
+
+    b 2a "Here \"it says\" that there is some kind of ^01\"jungle\"^00 scene nearby."
+    b 1a "Let's try to go there."
+    j 1a "Well, let's go, just don't forget to grab %s."
+
+    scene bg jungle
+
+    play music bgm_drum
+    show b 1a
+    show j 1a
+
+    b 4a "Wow... Everything here is the same, but green!"
+    "Definitely better than gray everyday life."
+    b 1a "Well, now we need to move on to more interesting things."
+
+    scene none
+    "..."
+
+script act1 [Main]

@@ -1,0 +1,133 @@
+[Main]
+
+    scene bg gray_day
+
+    stop music
+
+    autosave 0
+
+    "..."
+    "I am back in the gray everyday life."
+    "And everything would be fine..."
+    "But suddenly I see..."
+    "towards me..."
+    "at full speed..."
+
+    show b 1a
+
+    play music bgm1
+
+    b 2a "Yes, I'm already here, I'm here!"
+    show j 1a
+    j 1a "And I'm here too..."
+    b 1a "Hey, Jam!"
+    j 2a "What?"
+    b 1a "Look at me!"
+
+    play sound explosion-blast
+    b dragon "I am now a DRAGON! DRAGON!!! RRRrrraaaawwwrRRR!"
+
+    j 3a "Don't be ridiculous! But the Dragon is awesome!"
+    b 1a "Exactly! By the way, he is our strongest character! The half of our community relies on him!"
+    b 2a "The other half relies on... Actually everything relies on him."
+    j 2a "..."
+
+    b 1a "In any case..."
+
+    choice "Choose what you like more today?" "Bagel" [choice1_a] "Cheese" [choice1_b]
+
+[choice1_a]
+    if mc 2 == value 1 then [choice1_a_wrong]
+    b 2a "Ah, Bagels, that's wonderful"
+    b 1a "I'm glad you didn't change your mind."
+    label [Main_P1]
+
+[choice1_a_wrong]
+    b 2a "Ah, Bagels, that's wonderful"
+    b 1a "But you said different yesterday!!!"
+    label [Main_P1]
+
+[choice1_b]
+    if mc 2 == value 0 then [choice1_b_wrong]
+    b 2a "Ah, Cheese, that's wonderful"
+    b 1a "I'm glad you didn't change your mind."
+    label [Main_P1]
+
+[choice1_b_wrong]
+    b 2a "Ah, Cheese, that's wonderful"
+    b 1a "But you said different yesterday!!!"
+    label [Main_P1]
+    
+[Main_P1]
+
+    show j 1a
+    stop music
+
+    "..."
+    j "..."
+    b "..."
+    "Jam looks at Brew."
+    "Brew looks at Jam."
+    "I look at both of them... again..."
+
+    play music bgm1
+
+    b 1a "Hey, %s, I recently starred in a beautiful cover, do you want to see it?"
+    j 4a "Don't believe him, what photogenicity can a mug of beer have?"
+    b 2a "Come on, I actually shine on my own!"
+    hide j
+    hide b
+    choice "Look at Brew or not?" "Look" [choice2_a] "Better not" [choice2_b]
+
+[choice2_a]
+    scene cg brew_cg
+    play music bgm2
+    "Just look at this..."
+    "..."
+    "..."
+    "An hour has passed..."
+    "Let's skip a few lines ourselves to save time..."
+    autoskip true
+    "..."
+    "...    And more ...."
+    "...              And more ...."
+    "...                          And more ...."
+    "...    And more ...."
+    "...              And more ...."
+    "...                          And more ...."
+    autoskip false
+    "Well, that's enough"
+    label [Main_P2]
+
+[choice2_b]
+    "I think I'll pass..."
+    label [Main_P2]
+
+[Main_P2]
+    scene bg gray_day
+    play music bgm_drum
+    show j 1a
+    j 1a "Well, actually, I still have a die here..."
+    j 2a "I want to see if I roll a six if I throw it"
+    j 1a "You can save right now and watch me throw it over and over, maybe I'll get it"
+    j 4a "So..."
+    "Jam throws the die!"
+    j 5nohand "Ouch, I tore my hand off!"
+    chance 20 [chance_success]
+    "Unlucky..."
+    label [Main_P3]
+
+[chance_success]
+    j 2a "Hooray, I rolled a six!!!"
+    label [Main_P3]
+
+[Main_P3]
+    show b 1a
+    j 1a "Well, it seems we've shown the standard functions, maybe we'll see each other again sometime..."
+    b 3a "Lastly, let's show a custom function!"
+    show j 2a
+    stop music
+    j 2a "See you soon!"
+    b 2a "Bye bye!"
+    custom_credits 0
+    mainmenu 0

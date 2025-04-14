@@ -86,11 +86,11 @@ void overlays_draw(){
         parms.height = choice_sprite->height;
         parms.style_id = gamestatus.fonts.mainfontstyle;
         for(int i = 0; i < overlaystate.choiceoverlay.choicescount; i++){
-            parms.style_id = 0;
+            parms.style_id = gamestatus.fonts.mainfontstyle;
             const char* name = overlaystate.choiceoverlay.choices_labels[(i*2) + 1].c_str();
             rdpq_set_mode_copy(true);
             if(i == overlaystate.choiceoverlay.selectedchoice){
-                parms.style_id = 2;
+                parms.style_id = gamestatus.fonts.mainfontselected;
                 rdpq_sprite_blit_anchor(choice_sprite_select, ALIGN_CENTER, VALIGN_CENTER, width2, start, NULL);
                 rdpq_set_mode_standard();
                 rdpq_mode_combiner(RDPQ_COMBINER_TEX);
