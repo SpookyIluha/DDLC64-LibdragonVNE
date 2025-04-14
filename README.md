@@ -41,6 +41,12 @@ Libdragon SDK (github page https://github.com/DragonMinded/libdragon) is a free 
 - the github page of an DDLC N64 fan-port will not contain any assets (including text, narrative, sound/music, images/backgrounds etc.) of the original game and anyone that wants to build the game themselves would need to download the game and extract its assets.
 - the release itself of the game is a .z64 ROM image that should only be played on an N64 system itself. Any assets that the game is built with are converted to Libdragon-specific formats, compressed and reduced in resolution/bitrate and will use different formatting, and are baked into the ROM image itself, meaning they are only used for their intended purpose of playing the game.
 
+# Build the game
+- Install Libdragon SDK (unstable)
+- Clone this repository
+- Add your DDLC assets from the Release to the "assets" or "filesystem" folder
+- Build it with make command
+
 # Screenshots
 ![ddlc64 2025-04-10 00-36-17](https://github.com/user-attachments/assets/9d47028c-d9eb-49ae-a1ef-15bb4e481dab)
 ![ddlc64 2025-04-09 23-12-57](https://github.com/user-attachments/assets/b3d751de-e56f-4738-8be2-67a52d7d6061)
