@@ -1,5 +1,6 @@
 # An example game using LibdragonVNE
 This simple game shows how to use the Libdragon visual novel engine through a simple demo showing its various features.
+The LibdragonVNE itself and this example game is licensed UNLICENCE license.
 
 # Features:
 - General purpose modding support via mirrored filesystem ddlc64_mod_folder on a flashcart
