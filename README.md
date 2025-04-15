@@ -47,6 +47,11 @@ Libdragon SDK (github page https://github.com/DragonMinded/libdragon) is a free 
 - Add your DDLC assets from the Release to the "assets" or "filesystem" folder
 - Build it with make command
 
+# Add mods
+-  Build the game with any changes you want
+-  Copy the filesystem folder to the flashcart, rename it to ddlc64_mod_folder (or some other game name if you've changed it)
+-  Launch the game from flashcart, you should see content from that mod folder and the main menu should say "Modded"
+
 # Screenshots
 ![ddlc64 2025-04-10 00-36-17](https://github.com/user-attachments/assets/9d47028c-d9eb-49ae-a1ef-15bb4e481dab)
 ![ddlc64 2025-04-09 23-12-57](https://github.com/user-attachments/assets/b3d751de-e56f-4738-8be2-67a52d7d6061)
