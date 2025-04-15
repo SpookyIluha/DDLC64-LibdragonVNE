@@ -15,7 +15,6 @@
 
     b 2a "Итак, раз мы выбрались из серости нашего окружения, мы свободные люди и можем выбирать!"
     b 1a "Выбери что тебе нравится больше?"
-    hide j
     hide b
     choice "Выбери что тебе нравится больше?" "Бублик" [choice1_a] "Сыр" [choice1_b]
 
@@ -35,10 +34,10 @@
     
 [Main_P2]
 
-    show j 1a
     stop music
 
-    "..."
+    show j 2a
+    j 3a "..."
     j "..."
     b "..."
     "Джем оглядывается на Брю."
@@ -60,10 +59,12 @@ label [Main_Choice]
     label [Main_Choice]
 
 [Main_Choice]
+    "..."
     if mc 1 == value 2 then [Main_P3]
     hide j
     hide b
     choice "С кем бы мне пообедать?" "Брю" [Main_Brew] "Джем" [Main_Jam]
+    "..."
 
 [Main_Brew]
     if b 0 == value 1 then [Main_AlreadyDone]
@@ -75,18 +76,18 @@ label [Main_Choice]
     script act1_dinnerresponses [Main_Brew]
 
 [Main_Jam]
-    if y 0 == value 1 then [Main_AlreadyDone]
+    if j 0 == value 1 then [Main_AlreadyDone]
     show j 1a
     mc "Я хочу пообедать бублик с вареньем."
     "Брю непредвзято оценит это."
-    variable y 0 set 1
+    variable j 0 set 1
     variable mc 1 incr 1
     script act1_dinnerresponses [Main_Jam]
 
 [Main_P3]
-    show b 2a
+    show b 1a
     show j 2a
-    b 2a "Кстати, ты знал что мы уже автосохранились?"
+    b 1a "Кстати, ты знал что мы уже автосохранились?"
     b 1a "Если хочешь еще раз просмотреть эту сцену, загрузи автосохранение!"
     b 3a "Также ты можешь сам сохраниться в любой момент и пересматривать сцены..."
 

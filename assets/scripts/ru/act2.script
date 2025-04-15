@@ -40,26 +40,25 @@
     if mc 2 == value 1 then [choice1_a_wrong]
     b 2a "А, Бублики, это замечательно"
     b 1a "Я рад что ты не поменял своё мнение."
-    label [Main_P2]
+    label [Main_P1]
 
 [choice1_a_wrong]
     b 2a "А, Бублики, это замечательно"
     b 1a "Но вчера же ты говорил совсем иначе!!!"
-    label [Main_P2]
+    label [Main_P1]
 
 [choice1_b]
     if mc 2 == value 0 then [choice1_b_wrong]
     b 2a "А, Сыр, это замечательно"
     b 1a "Я рад что ты не поменял своё мнение."
-    label [Main_P2]
+    label [Main_P1]
 
 [choice1_b_wrong]
-    if mc 2 == value 0 then [choice1_b_wrong]
     b 2a "А, Сыр, это замечательно"
     b 1a "Но вчера же ты говорил совсем иначе!!!"
-    label [Main_P2]
+    label [Main_P1]
     
-[Main_P2]
+[Main_P1]
 
     show j 1a
     stop music
@@ -100,11 +99,12 @@
     "Ну все, достаточно"
     label [Main_P2]
 
-[choice2_a]
+[choice2_b]
     "Я думаю я лучше откажусь..."
     label [Main_P2]
 
 [Main_P2]
+    scene bg gray_day
     play music bgm_drum
     show j 1a
     j 1a "Ну, вообще, тут у меня еще кубик есть..."
@@ -129,7 +129,7 @@
     stop music
     j 2a "До скорой встречи!"
     b 2a "Пока пока!"
-    custom_credits
-    mainmenu
+    custom_credits 0
+    mainmenu 0
 
 
