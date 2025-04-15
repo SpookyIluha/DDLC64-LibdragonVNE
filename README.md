@@ -2,6 +2,8 @@
 This simple game shows how to use the Libdragon visual novel engine through a simple demo showing its various features.
 The LibdragonVNE itself and this example game is licensed UNLICENCE license.
 
+The full guide to using the engine can be found either in the ``src/engine-usage-guide.md`` or the wiki
+
 # Features:
 - General purpose modding support via mirrored filesystem ddlc64_mod_folder on a flashcart
 - Full 480i graphics at high framerates and full CD stereo quality soundtrack
