@@ -1,5 +1,7 @@
 [Main]
 
+# Комментарии можно писать так, с начала строки
+
     stop music
 
     scene bg gray_day

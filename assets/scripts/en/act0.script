@@ -1,5 +1,7 @@
 [Main]
 
+# Comments are written like this, from line start
+
     stop music
 
     scene bg gray_day
