@@ -156,6 +156,7 @@ void scripts_config_load(){
 
     gamestatus.fonts.mainfont       =  ini["Fonts"]["mainfont"]         | 1;
     gamestatus.fonts.mainfontstyle  =  ini["Fonts"]["mainfontstyle"]    | 0;
+    gamestatus.fonts.mainfontselected  =  ini["Fonts"]["mainfontselected"]    | 0;
     gamestatus.fonts.titlefont      =  ini["Fonts"]["titlefont"]        | 1;
     gamestatus.fonts.titlefontstyle =  ini["Fonts"]["titlefontstyle"]   | 0;
 

@@ -238,12 +238,12 @@ actionfuncres_t seqlibrary_mainmenu(std::vector<std::string>& argv){
 actionfuncres_t seqlibrary_chance(std::vector<std::string>& argv){
     assert(argv.size() == 2);
     int percentage = atoi(argv[0].c_str());
-    if(rand() % 100 < percentage){
+    if(rand() % 100 <= percentage){
         scripts_sequence_setlabel(argv[1].c_str()); 
         scripts_sequence_line(0);
         return SEQ_CONTINUE_LINEJMP;
-    }
-    return SEQ_CONTINUE_LINEJMP;
+    } else 
+    return SEQ_CONTINUE;
 }
 
 // character + index + action + value
