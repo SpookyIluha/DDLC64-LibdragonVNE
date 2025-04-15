@@ -5,6 +5,8 @@ An unofficial fan-port of the Doki Doki Literature Club to the Nintendo 64 using
 
 ### It is suggested to play the official version first! Support the original developers at Team Salvato!
 
+The full guide to using the underlying engine can be found either in the ``src/engine-usage-guide.md`` or the wiki
+
 # Features:
 - General purpose modding support via mirrored filesystem ddlc64_mod_folder on a flashcart
 - Full 480i graphics at high framerates and full CD stereo quality soundtrack
