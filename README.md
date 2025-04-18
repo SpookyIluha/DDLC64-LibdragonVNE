@@ -55,12 +55,13 @@ Libdragon SDK (github page https://github.com/DragonMinded/libdragon) is a free 
 -  Launch the game from flashcart, you should see content from that mod folder and the main menu should say "Modded"
 
 # Screenshots
-![ddlc64 2025-04-10 00-36-17](https://github.com/user-attachments/assets/9d47028c-d9eb-49ae-a1ef-15bb4e481dab)
 ![ddlc64 2025-04-09 23-12-57](https://github.com/user-attachments/assets/b3d751de-e56f-4738-8be2-67a52d7d6061)
-![ddlc64 2025-04-05 18-26-11](https://github.com/user-attachments/assets/218dd677-caf0-4516-9383-866dd3439d25)
-![ddlc64 2025-04-05 18-18-27](https://github.com/user-attachments/assets/07b1717e-0c88-4f00-a7c2-24613a079db9)
+![ddlc64 2025-04-18 12-53-56](https://github.com/user-attachments/assets/a690d3d0-641b-4b98-973b-e1afb31bc1f0)
+![ddlc64 2025-04-10 00-36-17](https://github.com/user-attachments/assets/9d47028c-d9eb-49ae-a1ef-15bb4e481dab)
+![ddlc64 2025-04-18 12-56-42](https://github.com/user-attachments/assets/12d224ac-e403-49bd-a726-04d74d013093)
 ![ddlc64 2025-04-05 15-17-46](https://github.com/user-attachments/assets/1c97be4c-7b61-4175-8735-e2fff32ce1aa)
-![ddlc64 2025-04-05 16-13-17](https://github.com/user-attachments/assets/e946bc5f-6022-43ea-850c-02eb00837fec)
-![ddlc64 2025-03-24 18-30-21](https://github.com/user-attachments/assets/886985d8-4d52-4b06-be10-4ce1ab46e8f4)
+![ddlc64 2025-04-18 10-43-05](https://github.com/user-attachments/assets/2277b5a9-4299-4365-bf9a-36120f96bee0)
+![ddlc64 2025-04-18 12-57-30](https://github.com/user-attachments/assets/e426e486-60d7-441d-a84c-cce85706fe94)
+![ddlc64 2025-04-18 12-55-00](https://github.com/user-attachments/assets/6ba0f0b3-039d-4adc-9d7e-41901684d0d2)
 ![ddlc64 2025-04-13 00-32-16](https://github.com/user-attachments/assets/9fc4db57-05eb-4f82-ad21-7411e8b4e835)
 
