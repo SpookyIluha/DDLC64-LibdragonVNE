@@ -1,7 +1,7 @@
-# DDLC64-LibdragonVNE
-An unofficial fan-port of the Doki Doki Literature Club to the Nintendo 64 using Libdragon SDK and a custom-made general purpose visual novel engine in C/C++. It is not affiliated with Team Salvato.
+# DDLC64 / Doki Doki Literature Club 64!
+An unofficial fan-port of the Doki Doki Literature Club! to the Nintendo 64 using Libdragon SDK and a custom-made general purpose visual novel engine in C/C++. It is not affiliated with Team Salvato.
 
-![boxart](https://github.com/user-attachments/assets/22796741-3315-45b4-b331-faed6675e823)
+![boxart](https://github.com/user-attachments/assets/8a9a2960-d9a2-4353-80a5-c19353c29a4f)
 
 ### It is suggested to play the official version first! Support the original developers at Team Salvato!
 
@@ -15,12 +15,12 @@ The full guide to using the underlying engine can be found either in the ``src/e
 # Disclaimer:
 - This fan port to N64 is not affiliated with Team Salvato.
 - It is suggested to play the official version first! Support the original developers!
-- You can download official Doki Doki Literature Club at http://www.ddlc.moe
+- You can download official Doki Doki Literature Club! at http://www.ddlc.moe
 - This port comes with absolutely NO WARRANTY WHATSOEVER.
 
 ### This game is not suitable for children. And those who are easily disturbed.
 ### Individuals suffering from anxiety or depression may not have a safe experience playing this game. For content warnings, please visit http://www.ddlc.moe/warning.html
-### By playing Doki Doki Literature Club, you agree that you are at least 13 years of age, and you consent to your exposure of highly disturbing content.
+### By playing Doki Doki Literature Club!, you agree that you are at least 13 years of age, and you consent to your exposure of highly disturbing content.
 
 # Libdragon Visual Novel Engine Features:
 - Automatic translations support for any game with a powerful translation system built into the engine itself
