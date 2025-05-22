@@ -1,7 +1,7 @@
 # DDLC64 / Doki Doki Literature Club 64!
 An unofficial fan-port of the Doki Doki Literature Club! to the Nintendo 64 using Libdragon SDK and a custom-made general purpose visual novel engine in C/C++. It is not affiliated with Team Salvato.
 
-![boxart](https://github.com/user-attachments/assets/8a9a2960-d9a2-4353-80a5-c19353c29a4f)
+![boxart_b](https://github.com/user-attachments/assets/eba8ea25-2ded-46d0-844a-705e7f51cec9)
 
 ### It is suggested to play the official version first! Support the original developers at Team Salvato!
 
